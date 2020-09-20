@@ -4,8 +4,6 @@
 #include<cstdlib>
 #include<cstdio>
 
-#if __cplusplus >= 201103L
-
 namespace probe
 {
     watch::watch(/* args */)
@@ -163,4 +161,3 @@ namespace probe
     }
 
 } // namespace probe
-#endif

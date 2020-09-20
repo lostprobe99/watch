@@ -12,16 +12,12 @@ static const char *WEEK[7] = {
     "SAT"
 };
 
-#ifdef PROBE_WATCH_H
 using namespace probe;
-#endif
 
 int main(int argc, char ** argv)
 {
     if(argc == 1)
         ::printf("\n%s:%s\n\n", __FILE__, __FUNCTION__);
-
-#ifdef PROBE_WATCH_H
 
     watch wa;
     wa.start();
@@ -35,10 +31,6 @@ int main(int argc, char ** argv)
     ::printf("Take %13.6lf s   for get now time\n", wa.get_s());
     ::printf("Take %13.6lf min for get now time\n", wa.get_min());
     ::printf("Take %13.6lf h   for get now time\n", wa.get_h());
-
-#else
-    ::std::cout << "no watch.cpp" << std::endl;
-#endif
 
     return 0;
 }

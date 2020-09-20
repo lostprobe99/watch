@@ -3,8 +3,6 @@
 
 #include <chrono>
 
-#if __cplusplus >= 201103L
-
 namespace probe
 {
     class watch
@@ -59,6 +57,4 @@ namespace probe
         uint32_t get_seconds() const;
     };
 } // namespace probe
-#endif
-
 #endif
