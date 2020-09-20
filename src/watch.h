@@ -10,7 +10,7 @@ namespace probe
     class watch
     {
     public:
-        typedef std::chrono::_V2::system_clock::time_point diff_point;
+        typedef decltype(std::chrono::high_resolution_clock::now()) diff_point;
 
     private:
         diff_point m_start, m_end;
