@@ -19,7 +19,7 @@ namespace probe
         // nano second of timer
         double get_ns() const;
         // micro second of timer
-        double get_mis() const;
+        double get_us() const;
         // milli second of timer
         double get_ms() const;
         // second of timer

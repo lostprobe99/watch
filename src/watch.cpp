@@ -31,7 +31,7 @@ namespace probe
         return diff.count();
     }
 
-    double watch::get_mis() const
+    double watch::get_us() const
     {
         std::chrono::duration<double, std::ratio<1, 1000000>> diff = m_end - m_start;
         return diff.count();
